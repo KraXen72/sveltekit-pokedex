@@ -24,12 +24,12 @@
 <script lang="ts">
     import type { Pokemon } from '$types';
     import PokemonCard from '$components/pokemonCard.svelte';
-
+    import { fade } from "svelte/transition";
     export let pokemon: Pokemon.Enriched[];
 
     let searchTerm = "";
     let filteredPokemon = pokemon
-    
+
     function handleSearch() {
         if (searchTerm) {
             let _searchTerm = searchTerm.toLowerCase() // new var as to not override input value
@@ -44,7 +44,7 @@
     <title>SvelteKit PokeDex</title>
 </svelte:head>
 
-<div class="search-hold px-10 my-5 sticky z-10 top-28 py-2 bg-white max-w-7xl mx-auto">
+<div class="search-hold px-10 my-5 sticky z-10 top-28 py-2 bg-white max-w-7xl mx-auto" transition:fade={{duration: 200}}>
     <input type="text" name="search" id="search" 
     bind:value={searchTerm} on:input={handleSearch}
     class="search w-full bg-fuchsia-200 p-3 rounded-lg font-semibold text-slate-700" autocomplete="off" spellcheck="false" placeholder="Search pokemon..."/>
