@@ -1,38 +1,17 @@
-# create-svelte
+# sveltekit-pokedex
+## uses:
+- `pokeapi.co/api/v2`
+- sveltekit
+- tailwindcss in jit mode
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## screenshots:
+![main](screenshots/main.png)  
+![detail](screenshots/detail.png)  
+![about](screenshots/about.png)  
+  
+## other stuff
+- it was built kinda following [this](https://www.youtube.com/watch?v=UU7MgYIbtAk) tutorial on yt
+- i made this mostly just to familiarize myself with sveltekit but might aswell throw it on github ok
+- too lazy to host it anywhere like vercel or heroku if you really need this in your life lmk i'll host it on vercel
+- i hate tailwindcss kinda but atleast i made it look better than James' version in the video so 🤷‍♂️
+  

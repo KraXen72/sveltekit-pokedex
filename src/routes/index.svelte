@@ -29,7 +29,7 @@
 
     let searchTerm = "";
     let filteredPokemon = pokemon
-
+    
     function handleSearch() {
         if (searchTerm) {
             let _searchTerm = searchTerm.toLowerCase() // new var as to not override input value
