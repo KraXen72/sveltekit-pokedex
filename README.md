@@ -2,6 +2,7 @@
 ## uses:
 - `pokeapi.co/api/v2`
 - sveltekit
+- typescript
 - tailwindcss in jit mode
 
 ## screenshots:
